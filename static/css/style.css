@@ -1,0 +1,40 @@
+body{
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	display : flex;
+	flex-flow:column;
+}
+a, a:visited {
+    color: inherit;
+}
+.header{
+	margin-left : 135px;
+  }
+.row{
+	display:flex;
+	  flex-direction: row;
+}
+.column{
+}
+
+
+
+.left {
+	flex: 3;
+	height: 100%;
+	margin-left : 135px;
+}
+
+.right {
+	height : 100%;
+flex: 1}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.posthead{
+	color :    #3498db  ;
+	font-size : 30px;
+}

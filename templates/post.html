@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+	</head>
+	<body>
+		<div class = "header">
+			<h1><a style="text-decoration:none" href="/"> Shivam Sinha</a> </h1>
+		</div>
+		<div class="row">
+			<div class="column left">
+				<h2>  {{title}} </h2>
+				<p> [{{date}}] </p>
+				{{post_data|safe}}
+				<div>
+					<h3> Read another post - <a href="/blogpost/{{randompid}}">{{randomPostTitle}}</a> </h3>
+				</div>
+			</div>
+
+			<div class="column right" style="margin-left: 100px">
+				<h2> Links </h2>
+					<a href="https://drive.google.com/file/d/1zdeIO7TaNyQ7K4oGyuqCxoc0MgSc_Xca/view?usp=sharing"><p> Resume </p></a>
+					<a href='/archive'><p> Archive </p></a>
+					<a href='/aboutme'><p> About Me </p></a>
+			</div>
+		</div>
+	</body>
+</html>
